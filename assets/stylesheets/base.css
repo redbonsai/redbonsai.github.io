@@ -57,7 +57,7 @@ meta.foundation-data-attribute-namespace {
 }
 
 body {
-    font-family: "Noto Sans", Georgia, Times, serif
+    font-family: "Merriweather", Georgia, Times, serif
 }
 
 .header__logo,
@@ -77,7 +77,7 @@ body {
 .gutenberg h2.full-span,
 .gutenberg table th,
 .widget__title {
-    font-family: "Fjalla One", Helvetica Neue, Helvetica, sans-serif;
+    font-family: "Unica One", Helvetica Neue, Helvetica, sans-serif;
     text-transform: uppercase
 }
 
@@ -86,7 +86,7 @@ p,
 table,
 .widget__list__item,
 .widget__copy {
-    font-family: "Vollkorn", Georgia, Times, serif
+    font-family: "Noto Sans", Georgia, Times, serif
 }
 
 html {
@@ -624,13 +624,15 @@ body.page--work {
     display: inline-block;
     font-size: 1.1875rem;
     text-decoration: none;
-    width: 150px
+    width: 150px;
+    font-weight:700;
 }
 
 .header__logo span {
     color: #f00;
     font-size: 2.5rem;
-    line-height: 0
+    line-height: 0;
+
 }
 
 .header__nav {
@@ -660,13 +662,15 @@ body.page--work {
     content: '/';
     position: relative;
     right: -10px;
-    top: 0
+    top: 0;
+    font-weight:700;
 }
 
 .header__nav__item a {
     color: #333;
     font-size: 1.1875rem;
-    text-decoration: none
+    text-decoration: none;
+    font-weight:700;
 }
 
 .header__nav__item--current a {
@@ -871,6 +875,8 @@ body.nav--light .header__nav__item--current {
     opacity: 1
 }
 
+
+
 .page__header--feature {
     margin-top: -100px;
     min-height: 600px;
@@ -922,7 +928,10 @@ body.nav--light .header__nav__item--current {
         margin-right: auto;
         float: none;
         padding: 3.125rem 1.875rem !important;
-        text-align: center
+        text-align: left
+    }
+    .page__article--inner h2 {
+    	text-align:center;
     }
 }
 
@@ -1089,9 +1098,10 @@ body.nav--light .header__nav__item--current {
     border: 1px solid #ddd;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 50px;
     color: #ccc;
     display: inline-block;
+    font-weight:700;
     line-height: .9em;
     margin: 0.625rem 0;
     text-align: center;
@@ -1397,8 +1407,8 @@ p {
 .work__meta {
     color: #f00;
     display: block;
-    font-weight: normal;
-    text-decoration: none
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .post__meta,
@@ -1425,7 +1435,9 @@ p {
 }
 
 .work__meta {
-    text-transform: uppercase
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    font-size:1.2em;
 }
 
 .gutenberg p {
@@ -1433,7 +1445,7 @@ p {
     font-size: 1.0625rem;
     font-weight: normal;
     line-height: 2rem;
-    margin: 0 0 0.9375em
+    margin: 0 0 2.2em
 }
 
 .gutenberg p:first-of-type {
@@ -1456,9 +1468,9 @@ p {
 }
 
 .gutenberg h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin: .4em 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: .4em 0 .7em;
     text-transform: uppercase
 }
 
@@ -2344,4 +2356,8 @@ a {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0
+}
+
+.checklist p {
+	margin: 0.4em 0 0.3em;
 }
